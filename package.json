@@ -160,7 +160,7 @@
     ]
   },
   "devDependencies": {
-    "jshint": "~2.12.0",
+    "jshint": "~2.13.0",
     "mocha": "~8.2.0",
     "requirejs": "^2.3.2",
     "safe-regex": "^2.1.1",
