@@ -32,9 +32,11 @@ export const Browser: Readonly<{
     DAUM: "Daum";
     DILLO: "Dillo";
     DOLPHIN: "Dolphin";
+    DOOBLE: 'Dooble',
     DORIS: "Doris";
     DRAGON: "Dragon";
     DUCKDUCKGO: "DuckDuckGo";
+    ECOSIA: "Ecosia";
     EDGE: "Edge";
     EPIPHANY: "Epiphany";
     FACEBOOK: "Facebook";
@@ -73,6 +75,7 @@ export const Browser: Readonly<{
     KINDLE: "Kindle";
     LENOVO: "Smart Lenovo Browser";
     LADYBIRD: "Ladybird";
+    LG: "LG Browser";
     LIBREWOLF: "LibreWolf";
     LIEBAO: "LBBROWSER";
     LINE: "Line";
@@ -102,6 +105,7 @@ export const Browser: Readonly<{
     OPERA_MOBI: "Opera Mobi";
     OPERA_TABLET: "Opera Tablet";
     OPERA_TOUCH: "Opera Touch";
+    OTTER: "Otter";
     OVI: "OviBrowser";
     PALEMOON: "PaleMoon";
     PHANTOMJS: "PhantomJS";
@@ -113,6 +117,7 @@ export const Browser: Readonly<{
     QQ_LITE: "QQBrowserLite";
     QUARK: "Quark";
     QUPZILLA: "QupZilla";
+    QUTEBROWSER: "qutebrowser";
     REKONQ: "rekonq";
     ROCKMELT: "Rockmelt";
     SAFARI: "Safari";
@@ -129,6 +134,7 @@ export const Browser: Readonly<{
     SNAPCHAT: "Snapchat";
     SOGOU_EXPLORER: "Sogou Explorer";
     SOGOU_MOBILE: "Sogou Mobile";
+    SURF: "Surf";
     SWIFTFOX: "Swiftfox";
     TESLA: "Tesla";
     TIKTOK: "TikTok";
