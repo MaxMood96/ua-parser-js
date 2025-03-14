@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////
-/*  Extensions for UAParser.js v2.0.2
+/*  Extensions for UAParser.js v2.0.3
     https://github.com/faisalman/ua-parser-js
     Author: Faisal Salman <f@faisalman.com>
     AGPLv3 License */
@@ -244,6 +244,11 @@ const Fetchers = Object.freeze({
             /((?:better uptime |telegram|vercel)bot|cohere-ai|feedfetcher-google|google(?:imageproxy|-read-aloud|-pagerenderer|producer)|snap url preview|yandex(?:sitelinks|userproxy))/i
         ], 
         [NAME, [TYPE, FETCHER]],
+    ],
+
+    os : [
+        [/whatsapp\/[\d\.]+ (a|i)/i],
+        [[NAME, os => os == 'A' ? 'Android' : 'iOS' ]]
     ]
 });
 
@@ -335,15 +340,20 @@ const Libraries = Object.freeze({
 
 const Vehicles = Object.freeze({
     device : [
-        [
-            /dilink.+(byd) auto/i,                                              // BYD
-        ], [VENDOR], [
+        [/aftlbt962e2/i],                                                   // BMW
+        [[VENDOR, 'BMW']],
 
-            /(rivian) (r1t)/i,                                                  // Rivian
-        ], [VENDOR, MODEL], [
+        [/dilink.+(byd) auto/i],                                            // BYD
+        [VENDOR],
 
-            /vcc.+netfront/i,                                                   // Volvo
-        ], [[VENDOR, 'Volvo']]
+        [/aftlft962x3/i],                                                   // Jeep
+        [[VENDOR, 'Jeep'], [MODEL, 'Wagooner']],
+        
+        [/(rivian) (r1t)/i],                                                // Rivian
+        [VENDOR, MODEL],
+
+        [/vcc.+netfront/i],                                                 // Volvo
+        [[VENDOR, 'Volvo']]
     ]
 });
 
@@ -357,6 +367,9 @@ const Bots = Object.freeze({
         ...Crawlers.browser,
         ...Fetchers.browser,
         ...Libraries.browser
+    ],
+    os : [
+        ...Fetchers.os
     ]
 });
 
