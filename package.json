@@ -248,7 +248,7 @@
     "@babel/traverse": "7.23.2",
     "@playwright/test": "^1.49.0",
     "jshint": "~2.13.6",
-    "mocha": "~8.2.0",
+    "mocha": "~10.6.0",
     "requirejs": "2.3.2",
     "safe-regex": "^2.1.1",
     "tsd": "^0.29.0",
